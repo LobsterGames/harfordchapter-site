@@ -1,0 +1,5 @@
+User-agent: * 
+Allow: /
+
+Sitemap:
+https://harfordchapter.netlify.app/sitemap.xml
