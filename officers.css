@@ -376,7 +376,7 @@ section img{
         transform-origin: center;
     }
 
-    .footer-img{
+        .footer-img{
         transform: scale(1.3); /*3*/
         
         transform-origin: center;
@@ -384,13 +384,17 @@ section img{
 
 
 
+
      .event-row {
         font-size:4vw; /*4*/
         
     }
-    footer{
-        font-size:5vw; /*5*/
+        .footer-img{
+        transform: scale(1.3); /*3*/
+        
+        transform-origin: center;
     }
+
 
     .section-header{
         font-size:7vw; /*7*/
@@ -421,10 +425,7 @@ section img{
         font-size:4vw;
     }
 
-    .afeet{
-        font-size:3.5vw ;
-    }
-
+    
     /*new stuff*/
 .nav-wrapper{
     height:100px;
@@ -432,8 +433,31 @@ section img{
 /*new stuff*/
 
 
+.icon {
+    width:9.25vw !important;
+    height:9.25vw !important;
+    padding-bottom: 12.5%;
+    
+}
+.footer-nav li{
+    padding: 0 0;
+}
+
+.afeet{
+    font-size:4vw ;
+}
+
+
+
+
+
+
 
 
 }
 
-
+.icon {
+    width:50;
+    height:50;
+    
+}

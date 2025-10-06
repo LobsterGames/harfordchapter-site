@@ -393,7 +393,31 @@ input {
 
     
 
+.icon {
+    width:7.25vw !important;
+    height:7.25vw !important;
+    padding-bottom: 12.5%;
+    
+}
+.footer-nav li{
+    padding: 0 0;
+}
+
+.afeet{
+    font-size:4vw;
+}
 
 
 
+
+
+
+
+
+}
+
+.icon {
+    width:50;
+    height:50;
+    
 }
