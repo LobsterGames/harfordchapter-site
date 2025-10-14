@@ -219,6 +219,7 @@ iframe {
 .event-button a {
     color:white;
     text-decoration:none;
+    
 }
 
 
@@ -351,11 +352,18 @@ iframe {
     margin: 0 auto;
 }
 
-
+.shrink{
+    color:white;
+}
 
 /*Mobile Optimization!*/
 
 @media (max-width: 768px){
+
+    .shrink{
+        font-size:3vw;
+    }
+
     header {
         font-size: 4vw; 
     }
