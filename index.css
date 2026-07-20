@@ -224,6 +224,7 @@ iframe {
     font-size:1.5vw;
     font-weight:bold;
     cursor:pointer;
+    width:8vw;
 }
 
 
@@ -235,7 +236,7 @@ iframe {
 
 
 table {
-    width:1000px;
+    width:90vw;
     margin-left: auto;
     margin-right: auto;
     
@@ -456,6 +457,7 @@ tr:nth-child(odd) {
     .event-button{
         font-size:4vw; /*4*/
         height: 8vw;
+        width: 15vw;
 
 
     }
