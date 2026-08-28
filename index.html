@@ -95,14 +95,73 @@
                 <br>
 
                 
-                <video width="800" height="600" autoplay loop muted style="display: block; margin: 0 auto; ">
-                    <source src="Videos/slideshow2.mp4" type="video/mp4">
-                
+  
+</div>
 
-                
+<div class="slideshow">
+  <div class="slides">
+    <img src="Images/1.jpg" class="slide active">
+    <img src="Images/2.jpg" class="slide">
+    <img src="Images/3.jpg" class="slide">
+    <img src="Images/4.jpg" class="slide">
+    <img src="Images/5.jpg" class="slide">
+    <img src="Images/6.jpg" class="slide">
+    <img src="Images/7.jpg" class="slide">
+    <img src="Images/8.jpg" class="slide">
+    <img src="Images/9.jpg" class="slide">
+    <img src="Images/10.jpg" class="slide">
+    <img src="Images/11.jpg" class="slide">
+    <img src="Images/12.jpg" class="slide">
+    <img src="Images/13.jpg" class="slide">
+  </div>
+
+  <button class="prev">❮</button>
+  <button class="next">❯</button>
+</div>
+
+<script>
+let index = 0;
+let slides = document.querySelectorAll(".slide");
+let autoplayDelay = 4000;
+let autoplay;
+
+function showSlide(i) {
+  slides.forEach(s => s.classList.remove("active"));
+  slides[i].classList.add("active");
+}
+
+function nextSlide() {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
+
+function prevSlide() {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+}
+
+function resetAutoplay() {
+  clearInterval(autoplay);
+  autoplay = setInterval(nextSlide, autoplayDelay);
+}
 
 
-                </video>
+// Buttons
+document.querySelector(".next").onclick = () => {
+  resetAutoplay();
+  nextSlide();
+};
+
+document.querySelector(".prev").onclick = () => {
+  resetAutoplay();
+  prevSlide();
+};
+
+// Start autoplay on load
+resetAutoplay();
+</script>
+
+
                 <br>
                 <p style="font-size:smaller;">Send images <a href="mailto:harfordchaptercomms@gmail.com" type="_blank" style="font-weight:bold;">here</a> to add to the slideshow.</p>
                 
@@ -121,24 +180,10 @@
                     </tr>
 
                     <tr>
-                        <td>August 15</td>
-                        <td>Chapter Cookout</td>
-                        <td>Broad Creek</td>
-                        <td><a href="https://m.signupgenius.com/#!/showSignUp/10C0E48A9A62DA3F5C70-64453643-august?useFullSite=false " target="_blank"><div class="shrink">Register</div></a></td>
-                    </tr>
-
-                    <tr>
-                        <td>August 21-23</td>
-                        <td>Ordeal 3</td>
-                        <td>Broad Creek</td>
-                        <td><a href="https://scoutingevent.com/220-2026Ordeal" target="_blank"><div class="shrink">Register</div></a></td>
-                    </tr>
-
-                    <tr>
-                        <td>August 24</td>
-                        <td>LEC</td>
-                        <td>Schapiro Scout Service Center</td>
-                        <td><a href="https://scoutingevent.com/?OrgKey=BSA220&calendarID=597616" target="_blank"><div class="shrink">Details</div></a></td>
+                        <td>Sep 14</td>
+                        <td>Chapter Meeting</td>
+                        <td>Lutheran Church of the Good Shepherd</td>
+                        <td><div class="shrink">N/A</div></td>
                     </tr>
 
                     <tr>
@@ -146,6 +191,20 @@
                         <td>Ordeal 4</td>
                         <td>Broad Creek</td>
                         <td><a href="https://scoutingevent.com/220-2026Ordeal" target="_blank"><div class="shrink">Register</div></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Sep 28</td>
+                        <td>LEC</td>
+                        <td>Schapiro Service Center</td>
+                        <td><a href="https://scoutingevent.com/?OrgKey=BSA220&calendarID=597617" target="_blank"><div class="shrink">Details</div></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>Oct 2-4</td>
+                        <td>Fall Fellowship</td>
+                        <td>Broad Creek</td>
+                        <td><a href="https://scoutingevent.com/220-2026FallFellowship" target="_blank"><div class="shrink">Register</div></a></td>
                     </tr>
 
 
