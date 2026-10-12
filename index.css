@@ -181,8 +181,8 @@ section p{
     display:flex;
     justify-content:center;
     align-items:center;
-    height: 20vw;
-    border-radius: 50%;
+    transform: scale(1.25);
+    
     
 }
 
